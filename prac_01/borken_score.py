@@ -12,8 +12,6 @@ else
     print excellent
 """
 
-# TODO: Fix this!
-
 score = float(input("Enter score: "))
 if score < 0 or score > 100:
     message = "Invalid score"
