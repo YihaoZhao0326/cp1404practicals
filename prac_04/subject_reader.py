@@ -7,8 +7,13 @@ FILENAME = "subject_data.txt"
 
 
 def main():
+    """read the subject details from FILENAME and print it"""
     datas = load_data()
-    print(datas)
+    display_detail(datas)
+
+
+def display_detail(datas):
+    """print input datas with a well structure"""
     max_name_length = max(len(data[1]) for data in datas)
     max_number_length = max(len(str(data[2])) for data in datas)
     for data in datas:
